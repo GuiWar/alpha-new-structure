@@ -1,0 +1,14 @@
+import { customElement, FASTElement } from '@microsoft/fast-element';
+import { {{pascalCase route.name}}Styles as styles } from './{{route.name}}.styles';
+import { {{pascalCase route.name}}Template as template } from './{{route.name}}.template';
+
+@customElement({
+  name: '{{route.name}}-route',
+  template,
+  styles,
+})
+export class {{pascalCase route.name}} extends FASTElement {
+  constructor() {
+    super();
+  }
+}
